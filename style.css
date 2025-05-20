@@ -1,0 +1,143 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fundo preto */
+    overflow: hidden; /* Impede o scroll para se ajustar ao fundo */
+    position: relative; /* Para a imagem de fundo se ajustar corretamente */
+}
+
+/* Imagem de fundo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/1600x900.png?text=Academia'); /* Imagem de academia */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Deixa a imagem mais suave */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+/* Estilo para a caixa de conteúdo */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto translúcido */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    text-align: center;
+    z-index: 1; /* Coloca o conteúdo acima da imagem */
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f1f1f1;
+}
+
+/* Estilos para o formulário */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+}
+
+#massa-muscular {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+/* Estilo para a imagem de fundo e responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/1600x900.png?text=Academia'); /* Imagem de academia */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('academia.jpg'); /* Caminho para a imagem local */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+/* Imagem de fundo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('academia.jpg'); /* Caminho para sua imagem local */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
